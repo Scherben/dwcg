@@ -1,0 +1,22 @@
+Advance,Type,Cost
+Weapon Skill,Characteristic,500
+Ballistic Skill,Characteristic,500
+Strength,Characteristic,200
+Toughness,Characteristic,200
+Agility,Characteristic,750
+Intelligence,Characteristic,200
+Perception,Characteristic,500
+Willpower,Characteristic,750
+Fellowship,Characteristic,750
+Forbidden Lore (Adeptus Mechanicus),Skill,400
+Security (-),Skill,400
+Speak Language (Techna-Lingua),Skill,200
+Tech-Use (-),Skill,400
+Autosanguine (-),Talent,500
+Electro-Graft Use (-),Talent,600
+Feedback Screech (-),Talent,500
+Mechadendrite Use (Servo-Arm),Talent,500
+Mechadendrite Use (Weapon),Talent,500
+Mechadendrite Use (Utility),Talent,500
+Technical Knock (-),Talent,500
+The Flesh is Weak (-),Talent,800

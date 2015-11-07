@@ -1,0 +1,47 @@
+Advance,Type,Cost
+Weapon Skill,Characteristic,200
+Ballistic Skill,Characteristic,750
+Strength,Characteristic,500
+Toughness,Characteristic,500
+Agility,Characteristic,750
+Intelligence,Characteristic,200
+Perception,Characteristic,200
+Willpower,Characteristic,200
+Fellowship,Characteristic,750
+Invocation (-),Skill,400
+Common Lore (Adeptus Arbites),Skill,400
+Common Lore (Adeptus Astartes),Skill,400
+Common Lore (Adeptus Mechanicus),Skill,400
+Common Lore (Administratum),Skill,400
+Common Lore (Deathwatch),Skill,400
+Common Lore (Ecclesiarchy),Skill,400
+Common Lore (Imperial Creed),Skill,400
+Common Lore (Imperial Guard),Skill,400
+Common Lore (Imperial Navy),Skill,400
+Common Lore (Imperium),Skill,400
+Common Lore (Jericho Reach),Skill,400
+Common Lore (Tech),Skill,400
+Common Lore (War),Skill,400
+Scholastic Lore (Archaic),Skill,400
+Scholastic Lore (Astromancy),Skill,400
+Scholastic Lore (Beasts),Skill,400
+Scholastic Lore (Bureaucracy),Skill,400
+Scholastic Lore (Chymistry),Skill,400
+Scholastic Lore (Codex Astartes),Skill,400
+Scholastic Lore (Cryptology),Skill,400
+Scholastic Lore (Heraldry),Skill,400
+Scholastic Lore (Imperial Creed),Skill,400
+Scholastic Lore (Judgement),Skill,400
+Scholastic Lore (Legend),Skill,400
+Scholastic Lore (Numerology),Skill,400
+Scholastic Lore (Occult),Skill,400
+Scholastic Lore (Philosophy),Skill,400
+Scholastic Lore (Tactica Imperialis),Skill,400
+Forbidden Lore (Adeptus Astartes),Skill,400
+Forbidden Lore (Psykers),Skill,400
+Forbidden Lore (Warp),Skill,400
+Psyniscience (-),Skill,400
+Foresight (-),Talent,600
+Psychic Power (-),Talent,0
+Rite of Sanctioning (-),Talent,400
+Warp Sense (-),Talent,500

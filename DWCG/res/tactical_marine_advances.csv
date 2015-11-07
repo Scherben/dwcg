@@ -1,0 +1,41 @@
+Advance,Type,Cost
+Weapon Skill,Characteristic,500
+Ballistic Skill,Characteristic,500
+Strength,Characteristic,500
+Toughness,Characteristic,500
+Agility,Characteristic,500
+Intelligence,Characteristic,500
+Perception,Characteristic,500
+Willpower,Characteristic,200
+Fellowship,Characteristic,200
+Air of Authority (-),Talent,500
+Astartes Weapon Specialisation (Bolt (Pistol)),Talent,1000
+Astartes Weapon Specialisation (Bolt (Basic)),Talent,1000
+Astartes Weapon Specialisation (Bolt (Heavy)),Talent,1000
+Astartes Weapon Specialisation (Plasma (Pistol)),Talent,1000
+Astartes Weapon Specialisation (Plasma (Basic)),Talent,1000
+Astartes Weapon Specialisation (Plasma (Heavy)),Talent,1000
+Astartes Weapon Specialisation (Melta (Pistol)),Talent,1000
+Astartes Weapon Specialisation (Melta (Basic)),Talent,1000
+Astartes Weapon Specialisation (Melta (Heavy)),Talent,1000
+Astartes Weapon Specialisation (Flame (Pistol)),Talent,1000
+Astartes Weapon Specialisation (Flame (Basic)),Talent,1000
+Astartes Weapon Specialisation (Flame (Heavy)),Talent,1000
+Astartes Weapon Specialisation (SP (Pistol)),Talent,1000
+Astartes Weapon Specialisation (SP (Basic)),Talent,1000
+Astartes Weapon Specialisation (SP (Mounted)),Talent,1000
+Astartes Weapon Specialisation (Las (Pistol)),Talent,1000
+Astartes Weapon Specialisation (Las (Basic)),Talent,1000
+Astartes Weapon Specialisation (Las (Heavy)),Talent,1000
+Astartes Weapon Specialisation (Launcher (Heavy)),Talent,1000
+Astartes Weapon Specialisation (Launcher (Mounted)),Talent,1000
+Astartes Weapon Specialisation (Grenade (Thrown)),Talent,1000
+Astartes Weapon Specialisation (Exotic (Pistol)),Talent,1000
+Astartes Weapon Specialisation (Exotic (Basic)),Talent,1000
+Astartes Weapon Specialisation (Exotic (Heavy)),Talent,1000
+Astartes Weapon Specialisation (Melee (Chain)),Talent,1000
+Astartes Weapon Specialisation (Melee (Shock)),Talent,1000
+Astartes Weapon Specialisation (Melee (Power)),Talent,1000
+Astartes Weapon Specialisation (Melee (Mounted)),Talent,1000
+Double Team (-),Talent,200
+Rapid Reload (-),Talent,200

@@ -1,0 +1,15 @@
+Advance,Type,Cost
+Weapon Skill,Characteristic,200
+Ballistic Skill,Characteristic,750
+Strength,Characteristic,200
+Toughness,Characteristic,500
+Agility,Characteristic,200
+Intelligence,Characteristic,750
+Perception,Characteristic,200
+Willpower,Characteristic,750
+Fellowship,Characteristic,500
+Catfall (-),Talent,200
+Double Team (-),Talent,200
+Takedown (-),Talent,500
+Two-Weapon Wielder (Ballistic),Talent,500
+Two-Weapon Wielder (Melee),Talent,500

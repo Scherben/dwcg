@@ -1,0 +1,18 @@
+Advance,Type,Cost
+Weapon Skill,Characteristic,200
+Ballistic Skill,Characteristic,500
+Strength,Characteristic,500
+Toughness,Characteristic,500
+Agility,Characteristic,500
+Intelligence,Characteristic,200
+Perception,Characteristic,200
+Willpower,Characteristic,500
+Fellowship,Characteristic,500
+Chem-Use (-),Skill,400
+Interrogation (-),Skill,200
+Medicae (-),Skill,400
+Autosanguine (-),Talent,500
+Hardy (-),Talent,500
+Resistance (Cold),Talent,500
+Resistance (Heat),Talent,500
+Resistance (Poisons),Talent,500

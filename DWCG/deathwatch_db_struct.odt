@@ -1,0 +1,37 @@
+﻿Character (
+	Weapon Skill (int)
+Ballistic Skill (int)
+Strength (int)
+Toughness (int)
+Agility (int)
+Intelligence (int)
+Willpower (int)
+Fellowship (int)
+Wounds (int)
+Fate (int)
+Corruption (int)
+Movement (int)
+
+)
+Chapter
+Speciality
+Advanced Speciality
+Talent
+Trait
+Skill
+Special Ability
+Solo Mode Ability
+Squad Mode Ability
+Oath
+Equipment
+
+Armour History
+History
+Demeanour
+Chapter Demeanour
+Primarchs Curse
+Name
+
+Armour
+Weapon
+

@@ -1,0 +1,123 @@
+Skill,Group,Characteristic,Descriptor,Basic
+Acrobatics,-,Agility,Movement,-
+Awareness,-,Agility,-,#
+Barter,-,Fellowship,-,#
+Carouse,-,Toughness,-,#
+Charm,-,Fellowship,Interaction,#
+Chem-Use,-,Intelligence,Investigation,-
+Ciphers,Chapter Runes,Intelligence,-,-
+Ciphers,Xenos Markings,Intelligence,-,-
+Ciphers,Deathwatch,Intelligence,-,-
+Ciphers,Imperial Codes,Intelligence,-,-
+Ciphers,Mercenary Cant,Intelligence,-,-
+Ciphers,Inquisition,Intelligence,-,-
+Ciphers,Underworld,Intelligence,-,-
+Climb,-,Strength,Movement,#
+Command,-,Fellowship,-,#
+Common Lore,Adeptus Arbites,Intelligence,Investigation,-
+Common Lore,Adeptus Astartes,Intelligence,Investigation,-
+Common Lore,Adeptus Mechanicus,Intelligence,Investigation,-
+Common Lore,Administratum,Intelligence,Investigation,-
+Common Lore,Deathwatch,Intelligence,Investigation,-
+Common Lore,Ecclesiarchy,Intelligence,Investigation,-
+Common Lore,Imperial Creed,Intelligence,Investigation,-
+Common Lore,Imperial Guard,Intelligence,Investigation,-
+Common Lore,Imperial Navy,Intelligence,Investigation,-
+Common Lore,Imperium,Intelligence,Investigation,-
+Common Lore,Jericho Reach,Intelligence,Investigation,-
+Common Lore,Tech,Intelligence,Investigation,-
+Common Lore,War,Intelligence,Investigation,-
+Concealment,-,Agility,-,#
+Contortionist,-,Agility,Combat,#
+Deceive,-,Fellowship,Interaction,#
+Demolition,-,Intelligence,Crafting,-
+Disguise,-,Fellowship,-,#
+Dodge,-,Agility,Combat,#
+Drive,Ground Vehicle,Agility,Operator,-
+Drive,Skimmer/Hover,Agility,Operator,-
+Drive,Walker,Agility,Operator,-
+Evaluate,-,Intelligence,Investigation,#
+Forbidden Lore,Adeptus Astartes,Intelligence,Investigation,-
+Forbidden Lore,Adeptus Mechanicus,Intelligence,Investigation,-
+Forbidden Lore,Archeotech,Intelligence,Investigation,-
+Forbidden Lore,Black Library,Intelligence,Investigation,-
+Forbidden Lore,Deaemonology,Intelligence,Investigation,-
+Forbidden Lore,Heresy,Intelligence,Investigation,-
+Forbidden Lore,Inquisition,Intelligence,Investigation,-
+Forbidden Lore,Mutants,Intelligence,Investigation,-
+Forbidden Lore,Psykers,Intelligence,Investigation,-
+Forbidden Lore,Traitor Legions,Intelligence,Investigation,-
+Forbidden Lore,Warp,Intelligence,Investigation,-
+Forbidden Lore,Xenos,Intelligence,Investigation,-
+Gamble,-,Intelligence,-,#
+Inquiry,-,Fellowship,Investigation,#
+Interrogation,-,Willpower,-,-
+Intimidate,-,Strength,Interaction,#
+Invocation,-,Willpower,-,-
+Lip-Reading,-,Perception,-,-
+Literacy,-,Intelligence,-,-
+Logic,-,Intelligence,-,#
+Medicae,-,Intelligence,-,-
+Navigation,Surface,Intelligence,-,-
+Navigation,Stellar,Intelligence,-,-
+Performer,Dancer,Fellowship,-,-
+Performer,Musician,Fellowship,-,-
+Performer,Singer,Fellowship,-,-
+Performer,Storyteller,Fellowship,-,-
+Pilot,Personal,Agility,Operator,-
+Pilot,Flyers,Agility,Operator,-
+Pilot,Space Craft,Agility,Operator,-
+Psyniscience,-,Perception,-,-
+Scholastic Lore,Archaic,Intelligence,Investigation,-
+Scholastic Lore,Astromancy,Intelligence,Investigation,-
+Scholastic Lore,Beasts,Intelligence,Investigation,-
+Scholastic Lore,Bureaucracy,Intelligence,Investigation,-
+Scholastic Lore,Chymistry,Intelligence,Investigation,-
+Scholastic Lore,Codex Astartes,Intelligence,Investigation,-
+Scholastic Lore,Cryptology,Intelligence,Investigation,-
+Scholastic Lore,Heraldry,Intelligence,Investigation,-
+Scholastic Lore,Imperial Creed,Intelligence,Investigation,-
+Scholastic Lore,Judgement,Intelligence,Investigation,-
+Scholastic Lore,Legend,Intelligence,Investigation,-
+Scholastic Lore,Numerology,Intelligence,Investigation,-
+Scholastic Lore,Occult,Intelligence,Investigation,-
+Scholastic Lore,Philosophy,Intelligence,Investigation,-
+Scholastic Lore,Tactica Imperialis,Intelligence,Investigation,-
+Scrutiny,-,Perception,-,#
+Search,-,Perception,-,#
+Security,-,Agility,-,-
+Shadowing,-,Agility,-,-
+Silent Move,-,Agility,Movement,#
+Sleight of Hand,-,Agility,-,-
+Speak Language,Eldar,Intelligence,-,-
+Speak Language,High Gothic,Intelligence,-,-
+Speak Language,Kroot,Intelligence,-,-
+Speak Language,Low Gothic,Intelligence,-,-
+Speak Language,Ork,Intelligence,-,-
+Speak Language,Techna-Lingua,Intelligence,-,-
+Speak Language,Tau,Intelligence,-,-
+Survival,-,Intelligence,-,-
+Swim,-,Strength,Movement,#
+Tactics,Air Combat,Intelligence,-,-
+Tactics,Armoured Tactics,Intelligence,-,-
+Tactics,Assault Doctrine,Intelligence,-,-
+Tactics,Defensive Doctrine,Intelligence,-,-
+Tactics,Orbital Drop Procedures,Intelligence,-,-
+Tactics,Recon,Intelligence,-,-
+Tactics,Stealth,Intelligence,-,-
+Tactics,Void Combat,Intelligence,-,-
+Tech-Use,-,Intelligence,-,-
+Tracking,-,Intelligence,-,-
+Trade,Archaeologist,Intelligence,Crafting,-
+Trade,Armourer,Agility,Crafting,-
+Trade,Astrographer,Agility,Crafting,-
+Trade,Chymist,Intelligence,Crafting,-
+Trade,Cryptographer,Intelligence,Crafting,-
+Trade,Explorator,Intelligence,Crafting,-
+Trade,Linguist,Intelligence,Crafting,-
+Trade,Remembrancer,Intelligence,Agility,Crafting
+Trade,Shipwright,Intelligence,Crafting,-
+Trade,Soothsayer,Fellowship,Crafting,-
+Trade,Technomat,Intelligence,Crafting,-
+Trade,Trader,Fellowship,Crafting,-
+Wrangling,-,Intelligence,-,-

@@ -1,0 +1,96 @@
+Advance,Type,Cost
+Awareness (-),Skill,200
+Carouse (-),Skill,200
+Ciphers (Chapter Runes),Skill,200
+Climb (-),Skill,400
+Concealment (-),Skill,800
+Dodge (-),Skill,300
+Drive (Ground Vehicle),Skill,600
+Drive (Skimmer/Hover),Skill,600
+Drive (Walker),Skill,600
+Intimidate (-),Skill,400
+Literacy (-),Skill,200
+Common Lore (Adeptus Astartes),Skill,400
+Common Lore (Imperium),Skill,400
+Common Lore (War),Skill,400
+Navigation (Surface),Skill,400
+Search (-),Skill,400
+Silent Move (-),Skill,300
+Speak Language (Eldar),Skill,200
+Speak Language (High Gothic),Skill,200
+Speak Language (Kroot),Skill,200
+Speak Language (Low Gothic),Skill,200
+Speak Language (Ork),Skill,200
+Speak Language (Techna-Lingua),Skill,200
+Speak Language (Tau),Skill,200
+Survival (-),Skill,300
+Swim (-),Skill,200
+Tech-Use (-),Skill,800
+Trade (Archaeologist),Skill,600
+Trade (Armourer),Skill,600
+Trade (Astrographer),Skill,600
+Trade (Chymist),Skill,600
+Trade (Cryptographer),Skill,600
+Trade (Explorator),Skill,600
+Trade (Linguist),Skill,600
+Trade (Remembrancer),Skill,600
+Trade (Shipwright),Skill,600
+Trade (Soothsayer),Skill,600
+Trade (Technomat),Skill,600
+Trade (Trader),Skill,600
+Astartes Weapon Specialisation (Bolt (Pistol)),Talent,1500
+Astartes Weapon Specialisation (Bolt (Basic)),Talent,1500
+Astartes Weapon Specialisation (Bolt (Heavy)),Talent,1500
+Astartes Weapon Specialisation (Plasma (Pistol)),Talent,1500
+Astartes Weapon Specialisation (Plasma (Basic)),Talent,1500
+Astartes Weapon Specialisation (Plasma (Heavy)),Talent,1500
+Astartes Weapon Specialisation (Melta (Pistol)),Talent,1500
+Astartes Weapon Specialisation (Melta (Basic)),Talent,1500
+Astartes Weapon Specialisation (Melta (Heavy)),Talent,1500
+Astartes Weapon Specialisation (Flame (Pistol)),Talent,1500
+Astartes Weapon Specialisation (Flame (Basic)),Talent,1500
+Astartes Weapon Specialisation (Flame (Heavy)),Talent,1500
+Astartes Weapon Specialisation (SP (Pistol)),Talent,1500
+Astartes Weapon Specialisation (SP (Basic)),Talent,1500
+Astartes Weapon Specialisation (SP (Mounted)),Talent,1500
+Astartes Weapon Specialisation (Las (Pistol)),Talent,1500
+Astartes Weapon Specialisation (Las (Basic)),Talent,1500
+Astartes Weapon Specialisation (Las (Heavy)),Talent,1500
+Astartes Weapon Specialisation (Launcher (Heavy)),Talent,1500
+Astartes Weapon Specialisation (Launcher (Mounted)),Talent,1500
+Astartes Weapon Specialisation (Grenade (Thrown)),Talent,1500
+Astartes Weapon Specialisation (Exotic (Pistol)),Talent,1500
+Astartes Weapon Specialisation (Exotic (Basic)),Talent,1500
+Astartes Weapon Specialisation (Exotic (Heavy)),Talent,1500
+Astartes Weapon Specialisation (Melee (Chain)),Talent,1500
+Astartes Weapon Specialisation (Melee (Shock)),Talent,1500
+Astartes Weapon Specialisation (Melee (Power)),Talent,1500
+Astartes Weapon Specialisation (Melee (Mounted)),Talent,1500
+Signature Wargear (Astartes Bolt Pistol),Talent,500
+Signature Wargear (Astartes Bolter (Godwyn)),Talent,500
+Signature Wargear (Astartes Boltgun (Stalker)),Talent,500
+Signature Wargear (Astartes Combi-Weapon),Talent,500
+Signature Wargear (Astartes Heavy Bolter),Talent,500
+Signature Wargear (Astartes Storm Bolter),Talent,500
+Signature Wargear (Astartes Plasma Gun (Ragefire)),Talent,500
+Signature Wargear (Astartes Meltagun (Vulkan)),Talent,500
+Signature Wargear (Astartes Flamer),Talent,500
+Signature Wargear (Astartes Hand Flamer),Talent,500
+Signature Wargear (Astartes Heavy Flamer),Talent,500
+Signature Wargear (Astartes Shotgun),Talent,500
+Signature Wargear (Autogun),Talent,500
+Signature Wargear (Autopistol),Talent,500
+Signature Wargear (Lasgun),Talent,500
+Signature Wargear (Laspistol),Talent,500
+Signature Wargear (Astartes Missile Launcher (Soundstrike)),Talent,500
+Signature Wargear (Auxiliary Grenade Launcher),Talent,500
+Signature Wargear (Astartes Frag Grenade),Talent,500
+Signature Wargear (Astartes Krak Grenade),Talent,500
+Signature Wargear (Astartes Sniper Rifle),Talent,500
+Signature Wargear (Astartes Chainsword),Talent,500
+Signature Wargear (Astartes Power Axe),Talent,500
+Signature Wargear (Astartes Power Sword),Talent,500
+Signature Wargear (Astartes Combat Knife),Talent,500
+Signature Wargear (Ceremonial Sword),Talent,500
+Signature Wargear (Sacris Claymore),Talent,500
+Sound Constitution (-),Talent,500

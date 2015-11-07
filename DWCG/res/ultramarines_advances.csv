@@ -1,0 +1,59 @@
+Advance,Type,Cost
+Charm (-),Skill,400
+Command (-),Skill,400
+Performer (Dancer),Skill,200
+Performer (Musician),Skill,200
+Performer (Singer),Skill,200
+Performer (Storyteller),Skill,200
+Tactics (Air Combat),Skill,400
+Tactics (Armoured Tactics),Skill,400
+Tactics (Assault Doctrine),Skill,400
+Tactics (Defensive Doctrine),Skill,400
+Tactics (Orbital Drop Procedures),Skill,400
+Tactics (Recon),Skill,400
+Tactics (Stealth),Skill,400
+Tactics (Void Combat),Skill,400
+Duty Unto Death (-),Talent,800
+Exemplar of Honor (-),Talent,800
+Good Reputation (Adeptus Arbites),Talent,800
+Good Reputation (Adeptus Astra Telepathica),Talent,800
+Good Reputation (Adeptus Astartes),Talent,800
+Good Reputation (Adeptus Mechanicus),Talent,800
+Good Reputation (Adepta Sororitas),Talent,800
+Good Reputation (Adeptus Titanicus),Talent,800
+Good Reputation (Administratum),Talent,800
+Good Reputation (Astropaths),Talent,800
+Good Reputation (Chartist Captains),Talent,800
+Good Reputation (Ecclesiarchy),Talent,800
+Good Reputation (Imperial Guard),Talent,800
+Good Reputation (Imperial Navy),Talent,800
+Good Reputation (Inquisition),Talent,800
+Good Reputation (Navigators),Talent,800
+Good Reputation (Officio Assassinorum),Talent,800
+Good Reputation (PDF),Talent,800
+Good Reputation (Planetary Govenors),Talent,800
+Good Reputation (Rouge Trader),Talent,800
+Good Reputation (Schola Progenium),Talent,800
+Good Reputation (Scholastica Psykana),Talent,800
+Hatred (Tyranids),Talent,500
+Peer (Adeptus Arbites),Talent,500
+Peer (Adeptus Astra Telepathica),Talent,500
+Peer (Adeptus Astartes),Talent,500
+Peer (Adeptus Mechanicus),Talent,500
+Peer (Adepta Sororitas),Talent,500
+Peer (Adeptus Titanicus),Talent,500
+Peer (Administratum),Talent,500
+Peer (Astropaths),Talent,500
+Peer (Chartist Captains),Talent,500
+Peer (Ecclesiarchy),Talent,500
+Peer (Imperial Guard),Talent,500
+Peer (Imperial Navy),Talent,500
+Peer (Inquisition),Talent,500
+Peer (Navigators),Talent,500
+Peer (Officio Assassinorum),Talent,500
+Peer (PDF),Talent,500
+Peer (Planetary Govenors),Talent,500
+Peer (Rouge Trader),Talent,500
+Peer (Schola Progenium),Talent,500
+Peer (Scholastica Psykana),Talent,500
+Talented (Command),Talent,500
