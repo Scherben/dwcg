@@ -10,6 +10,7 @@
 
 //	+++ IMPORT +++
 
+import database.DWCGDB;
 import model.DWCGModel;
 import view.DWCGFrame;
 
@@ -24,5 +25,7 @@ public class DWCG {
 	public static void main(String[] args) {
 		DWCGModel m = new DWCGModel();
 		new DWCGFrame(m);
+		
+		new DWCGDB();
 	}
 }

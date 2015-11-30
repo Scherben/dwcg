@@ -40,6 +40,7 @@ import control.CreationControl;
 
 import model.CreationModel;
 
+import resources.C;
 import resources.Functions;
 
 
@@ -279,91 +280,91 @@ public class CreationPanel extends JPanel implements Observer{
 		l_prog_name = new JLabel("Name:");
 		l_prog_name.setForeground(label_color);
 		l_prog_val_name = new JLabel();
-		l_prog_chapter = new JLabel(CreationModel.CHAPTER + ":");
+		l_prog_chapter = new JLabel(C.CHAPTER + ":");
 		l_prog_chapter.setForeground(label_color);
 		l_prog_val_chapter = new JLabel();
-		l_prog_speciality = new JLabel(CreationModel.SPECIALITY + ":");
+		l_prog_speciality = new JLabel(C.SPECIALITY + ":");
 		l_prog_speciality.setForeground(label_color);
 		l_prog_val_speciality = new JLabel();
-		l_prog_rank = new JLabel(CreationModel.RANK + ":");
+		l_prog_rank = new JLabel(C.RANK + ":");
 		l_prog_rank.setForeground(label_color);
-		l_prog_val_rank = new JLabel("" + m.getCharacterValueValue(CreationModel.RANK, 1));
-		l_prog_xptotal = new JLabel(CreationModel.XPTOTAL + ":");
+		l_prog_val_rank = new JLabel("" + m.getCharacterValueValue(C.RANK, 1));
+		l_prog_xptotal = new JLabel(C.XPTOTAL + ":");
 		l_prog_xptotal.setForeground(label_color);
-		l_prog_val_xptotal = new JLabel("" + m.getCharacterValueValue(CreationModel.XPTOTAL, 1));
-		l_prog_demeanour = new JLabel(CreationModel.DEMEANOUR + ":");
+		l_prog_val_xptotal = new JLabel("" + m.getCharacterValueValue(C.XPTOTAL, 1));
+		l_prog_demeanour = new JLabel(C.DEMEANOUR + ":");
 		l_prog_demeanour.setForeground(label_color);
 		l_prog_val_demeanour = new JLabel();
-		l_prog_chapterdemeanour = new JLabel(CreationModel.CHAPTER + " " + CreationModel.DEMEANOUR + ":");
+		l_prog_chapterdemeanour = new JLabel(C.CHAPTER + " " + C.DEMEANOUR + ":");
 		l_prog_chapterdemeanour.setForeground(label_color);
 		l_prog_val_chapterdemeanour = new JLabel();
-		l_prog_pastevent = new JLabel(CreationModel.PASTEVENT + ":");
+		l_prog_pastevent = new JLabel(C.PASTEVENT + ":");
 		l_prog_pastevent.setForeground(label_color);
 		l_prog_val_pastevent = new JLabel();
-		l_prog_description = new JLabel(CreationModel.DESCRIPTION + ":");
+		l_prog_description = new JLabel(C.DESCRIPTION + ":");
 		l_prog_description.setForeground(label_color);
 		l_prog_val_description = new JLabel();
-		l_prog_xprest = new JLabel(CreationModel.XPREST + ":");
+		l_prog_xprest = new JLabel(C.XPREST + ":");
 		l_prog_xprest.setForeground(label_color);
-		l_prog_val_xprest = new JLabel("" + m.getCharacterValueValue(CreationModel.XPREST, 1));
+		l_prog_val_xprest = new JLabel("" + m.getCharacterValueValue(C.XPREST, 1));
 		p_prog_characteristics = new JPanel();
-		l_prog_weaponskill = new JLabel(CreationModel.WS_ + ":");
+		l_prog_weaponskill = new JLabel(C.WS + ":");
 		l_prog_weaponskill.setForeground(label_color);
-		l_prog_ballisticskill = new JLabel(CreationModel.BS_ + ":");
+		l_prog_ballisticskill = new JLabel(C.BS + ":");
 		l_prog_ballisticskill.setForeground(label_color);
-		l_prog_strength = new JLabel(CreationModel.S_ + ":");
+		l_prog_strength = new JLabel(C.S + ":");
 		l_prog_strength.setForeground(label_color);
-		l_prog_toughness = new JLabel(CreationModel.T_ + ":");
+		l_prog_toughness = new JLabel(C.T + ":");
 		l_prog_toughness.setForeground(label_color);
-		l_prog_agility = new JLabel(CreationModel.AGI_ + ":");
+		l_prog_agility = new JLabel(C.AGI + ":");
 		l_prog_agility.setForeground(label_color);
-		l_prog_intelligence = new JLabel(CreationModel.INT_ + ":");
+		l_prog_intelligence = new JLabel(C.INT + ":");
 		l_prog_intelligence.setForeground(label_color);
-		l_prog_perception = new JLabel(CreationModel.PER_ + ":");
+		l_prog_perception = new JLabel(C.PER + ":");
 		l_prog_perception.setForeground(label_color);
-		l_prog_willpower = new JLabel(CreationModel.WP_ + ":");
+		l_prog_willpower = new JLabel(C.WP + ":");
 		l_prog_willpower.setForeground(label_color);
-		l_prog_fellowship = new JLabel(CreationModel.FEL_ + ":");
+		l_prog_fellowship = new JLabel(C.FEL + ":");
 		l_prog_fellowship.setForeground(label_color);
-		l_prog_val_weaponskill = new JLabel("" + m.getCharacteristicValue(CreationModel.WEAPONSKILL));
-		l_prog_val_ballisticskill = new JLabel("" + m.getCharacteristicValue(CreationModel.BALLISTICSKILL));
-		l_prog_val_strength = new JLabel("" + m.getCharacteristicValue(CreationModel.STRENGTH));
-		l_prog_val_toughness = new JLabel("" + m.getCharacteristicValue(CreationModel.TOUGHNESS));
-		l_prog_val_agility = new JLabel("" + m.getCharacteristicValue(CreationModel.AGILITY));
-		l_prog_val_intelligence = new JLabel("" + m.getCharacteristicValue(CreationModel.INTELLIGENCE));
-		l_prog_val_perception = new JLabel("" + m.getCharacteristicValue(CreationModel.PERCEPTION));
-		l_prog_val_willpower = new JLabel("" + m.getCharacteristicValue(CreationModel.WILLPOWER));
-		l_prog_val_fellowship = new JLabel("" + m.getCharacteristicValue(CreationModel.FELLOWSHIP));
+		l_prog_val_weaponskill = new JLabel("" + m.getCharacteristicValue(C.WEAPONSKILL));
+		l_prog_val_ballisticskill = new JLabel("" + m.getCharacteristicValue(C.BALLISTICSKILL));
+		l_prog_val_strength = new JLabel("" + m.getCharacteristicValue(C.STRENGTH));
+		l_prog_val_toughness = new JLabel("" + m.getCharacteristicValue(C.TOUGHNESS));
+		l_prog_val_agility = new JLabel("" + m.getCharacteristicValue(C.AGILITY));
+		l_prog_val_intelligence = new JLabel("" + m.getCharacteristicValue(C.INTELLIGENCE));
+		l_prog_val_perception = new JLabel("" + m.getCharacteristicValue(C.PERCEPTION));
+		l_prog_val_willpower = new JLabel("" + m.getCharacteristicValue(C.WILLPOWER));
+		l_prog_val_fellowship = new JLabel("" + m.getCharacteristicValue(C.FELLOWSHIP));
 		p_prog_values = new JPanel();
-		l_prog_wounds = new JLabel(CreationModel.WOUNDS + ":");
+		l_prog_wounds = new JLabel(C.WOUNDS + ":");
 		l_prog_wounds.setForeground(label_color);
-		l_prog_val_wounds = new JLabel("" + m.getCharacterValueValue(CreationModel.WOUNDS, 1));
-		l_prog_insanity = new JLabel(CreationModel.INSANITY + ":");
+		l_prog_val_wounds = new JLabel("" + m.getCharacterValueValue(C.WOUNDS, 1));
+		l_prog_insanity = new JLabel(C.INSANITY + ":");
 		l_prog_insanity.setForeground(label_color);
-		l_prog_val_insanity = new JLabel("" + m.getCharacterValueValue(CreationModel.INSANITY, 1));
-		l_prog_fate = new JLabel(CreationModel.FATE + ":");
+		l_prog_val_insanity = new JLabel("" + m.getCharacterValueValue(C.INSANITY, 1));
+		l_prog_fate = new JLabel(C.FATE + ":");
 		l_prog_fate.setForeground(label_color);
-		l_prog_val_fate = new JLabel("" + m.getCharacterValueValue(CreationModel.FATE, 1));
-		l_prog_corruption = new JLabel(CreationModel.CORRUPTION + ":");
+		l_prog_val_fate = new JLabel("" + m.getCharacterValueValue(C.FATE, 1));
+		l_prog_corruption = new JLabel(C.CORRUPTION + ":");
 		l_prog_corruption.setForeground(label_color);
-		l_prog_val_corruption = new JLabel("" + m.getCharacterValueValue(CreationModel.CORRUPTION, 1));
-		l_prog_reknown = new JLabel(CreationModel.REKNOWN + ":");
+		l_prog_val_corruption = new JLabel("" + m.getCharacterValueValue(C.CORRUPTION, 1));
+		l_prog_reknown = new JLabel(C.REKNOWN + ":");
 		l_prog_reknown.setForeground(label_color);
-		l_prog_val_reknown = new JLabel("" + m.getCharacterValueValue(CreationModel.REKNOWN, 1));
-		l_prog_movement = new JLabel(CreationModel.MOVEMENT + ":");
+		l_prog_val_reknown = new JLabel("" + m.getCharacterValueValue(C.REKNOWN, 1));
+		l_prog_movement = new JLabel(C.MOVEMENT + ":");
 		l_prog_movement.setForeground(label_color);
 		l_prog_movhalf = new JLabel("Half:");
 		l_prog_movhalf.setForeground(label_color);
-		l_prog_val_movhalf = new JLabel("" + m.getCharacterValueValue(CreationModel.MOVEMENT, 1));
+		l_prog_val_movhalf = new JLabel("" + m.getCharacterValueValue(C.MOVEMENT, 1));
 		l_prog_movfull = new JLabel("Full:");
 		l_prog_movfull.setForeground(label_color);
-		l_prog_val_movfull = new JLabel("" + m.getCharacterValueValue(CreationModel.MOVEMENT, 2));
+		l_prog_val_movfull = new JLabel("" + m.getCharacterValueValue(C.MOVEMENT, 2));
 		l_prog_movcharge = new JLabel("Charge:");
 		l_prog_movcharge.setForeground(label_color);
-		l_prog_val_movcharge = new JLabel("" + m.getCharacterValueValue(CreationModel.MOVEMENT, 3));
+		l_prog_val_movcharge = new JLabel("" + m.getCharacterValueValue(C.MOVEMENT, 3));
 		l_prog_movrun = new JLabel("Run:");
 		l_prog_movrun.setForeground(label_color);
-		l_prog_val_movrun = new JLabel("" + m.getCharacterValueValue(CreationModel.MOVEMENT, 4));
+		l_prog_val_movrun = new JLabel("" + m.getCharacterValueValue(C.MOVEMENT, 4));
 		p_prog_specialabilities = new JPanel();
 		l_prog_specialability = new JLabel("Special Abilities");
 		l_prog_specialability.setForeground(label_color);
@@ -391,9 +392,9 @@ public class CreationPanel extends JPanel implements Observer{
 		p_prog_psypowers = new JPanel();
 		l_prog_psypower = new JLabel("Psychic Powers");
 		l_prog_psypower.setForeground(label_color);
-		l_prog_psyrating = new JLabel(CreationModel.PSYRATING + ":");
+		l_prog_psyrating = new JLabel(C.PSYRATING + ":");
 		l_prog_psyrating.setForeground(label_color);
-		l_prog_val_psyrating = new JLabel("" + m.getCharacterValueValue(CreationModel.PSYRATING, 1));
+		l_prog_val_psyrating = new JLabel("" + m.getCharacterValueValue(C.PSYRATING, 1));
 		p_prog_psypowers_values = new JPanel();
 		p_prog_soloma = new JPanel();
 		l_prog_soloma = new JLabel("Solo Mode Abilities");
@@ -414,15 +415,15 @@ public class CreationPanel extends JPanel implements Observer{
 		p_cre_characteristics = new JPanel();
 		l_cre_step1_title = new JLabel("Roll all your Characteristics", JLabel.CENTER);
 		l_cre_step1_title.setFont(new Font("Sans", Font.PLAIN, 14));
-		l_cre_weaponskill = new JLabel(CreationModel.WS_, JLabel.CENTER);
-		l_cre_ballisticskill = new JLabel(CreationModel.BS_, JLabel.CENTER);
-		l_cre_strength = new JLabel(CreationModel.S_, JLabel.CENTER);
-		l_cre_toughness = new JLabel(CreationModel.T_, JLabel.CENTER);
-		l_cre_agility = new JLabel(CreationModel.AGI_, JLabel.CENTER);
-		l_cre_intelligence = new JLabel(CreationModel.INT_, JLabel.CENTER);
-		l_cre_perception = new JLabel(CreationModel.PER_, JLabel.CENTER);
-		l_cre_willpower = new JLabel(CreationModel.WP_, JLabel.CENTER);
-		l_cre_fellowship = new JLabel(CreationModel.FEL_, JLabel.CENTER);
+		l_cre_weaponskill = new JLabel(C.WS, JLabel.CENTER);
+		l_cre_ballisticskill = new JLabel(C.BS, JLabel.CENTER);
+		l_cre_strength = new JLabel(C.S, JLabel.CENTER);
+		l_cre_toughness = new JLabel(C.T, JLabel.CENTER);
+		l_cre_agility = new JLabel(C.AGI, JLabel.CENTER);
+		l_cre_intelligence = new JLabel(C.INT, JLabel.CENTER);
+		l_cre_perception = new JLabel(C.PER, JLabel.CENTER);
+		l_cre_willpower = new JLabel(C.WP, JLabel.CENTER);
+		l_cre_fellowship = new JLabel(C.FEL, JLabel.CENTER);
 		l_cre_val_weaponskill = new JLabel();
 		l_cre_val_ballisticskill = new JLabel();
 		l_cre_val_strength = new JLabel();
@@ -772,15 +773,15 @@ public class CreationPanel extends JPanel implements Observer{
 		//Step 1
 		
 		//addActionCommands to all Creation Buttons Step 1
-		b_cre_rerollweaponskill.setActionCommand("Reroll " + CreationModel.WEAPONSKILL);
-		b_cre_rerollballisticskill.setActionCommand("Reroll " + CreationModel.BALLISTICSKILL);
-		b_cre_rerollstrength.setActionCommand("Reroll " + CreationModel.STRENGTH);
-		b_cre_rerolltoughness.setActionCommand("Reroll " + CreationModel.TOUGHNESS);
-		b_cre_rerollagility.setActionCommand("Reroll " + CreationModel.AGILITY);
-		b_cre_rerollintelligence.setActionCommand("Reroll " + CreationModel.INTELLIGENCE);
-		b_cre_rerollperception.setActionCommand("Reroll " + CreationModel.PERCEPTION);
-		b_cre_rerollwillpower.setActionCommand("Reroll " + CreationModel.WILLPOWER);
-		b_cre_rerollfellowship.setActionCommand("Reroll " + CreationModel.FELLOWSHIP);
+		b_cre_rerollweaponskill.setActionCommand("Reroll " + C.WEAPONSKILL);
+		b_cre_rerollballisticskill.setActionCommand("Reroll " + C.BALLISTICSKILL);
+		b_cre_rerollstrength.setActionCommand("Reroll " + C.STRENGTH);
+		b_cre_rerolltoughness.setActionCommand("Reroll " + C.TOUGHNESS);
+		b_cre_rerollagility.setActionCommand("Reroll " + C.AGILITY);
+		b_cre_rerollintelligence.setActionCommand("Reroll " + C.INTELLIGENCE);
+		b_cre_rerollperception.setActionCommand("Reroll " + C.PERCEPTION);
+		b_cre_rerollwillpower.setActionCommand("Reroll " + C.WILLPOWER);
+		b_cre_rerollfellowship.setActionCommand("Reroll " + C.FELLOWSHIP);
 		b_cre_rollcharacteristics.setActionCommand("Roll all Characteristics");
 
 		//addActionListener to all Creation Buttons Step 1
@@ -796,25 +797,25 @@ public class CreationPanel extends JPanel implements Observer{
 		b_cre_rollcharacteristics.addActionListener(control);
 
 		//setToolTipText to all Creation Elements Step 1
-		b_cre_rerollweaponskill.setToolTipText("Reroll " + CreationModel.WEAPONSKILL);
-		b_cre_rerollballisticskill.setToolTipText("Reroll " + CreationModel.BALLISTICSKILL);
-		b_cre_rerollstrength.setToolTipText("Reroll " + CreationModel.STRENGTH);
-		b_cre_rerolltoughness.setToolTipText("Reroll " + CreationModel.TOUGHNESS);
-		b_cre_rerollagility.setToolTipText("Reroll " + CreationModel.AGILITY);
-		b_cre_rerollintelligence.setToolTipText("Reroll " + CreationModel.INTELLIGENCE);
-		b_cre_rerollperception.setToolTipText("Reroll " + CreationModel.PERCEPTION);
-		b_cre_rerollwillpower.setToolTipText("Reroll " + CreationModel.WILLPOWER);
-		b_cre_rerollfellowship.setToolTipText("Reroll " + CreationModel.FELLOWSHIP);
+		b_cre_rerollweaponskill.setToolTipText("Reroll " + C.WEAPONSKILL);
+		b_cre_rerollballisticskill.setToolTipText("Reroll " + C.BALLISTICSKILL);
+		b_cre_rerollstrength.setToolTipText("Reroll " + C.STRENGTH);
+		b_cre_rerolltoughness.setToolTipText("Reroll " + C.TOUGHNESS);
+		b_cre_rerollagility.setToolTipText("Reroll " + C.AGILITY);
+		b_cre_rerollintelligence.setToolTipText("Reroll " + C.INTELLIGENCE);
+		b_cre_rerollperception.setToolTipText("Reroll " + C.PERCEPTION);
+		b_cre_rerollwillpower.setToolTipText("Reroll " + C.WILLPOWER);
+		b_cre_rerollfellowship.setToolTipText("Reroll " + C.FELLOWSHIP);
 		b_cre_rollcharacteristics.setToolTipText("Roll all Characteristics");
-		l_cre_weaponskill.setToolTipText(CreationModel.WEAPONSKILL);
-		l_cre_ballisticskill.setToolTipText(CreationModel.BALLISTICSKILL);
-		l_cre_strength.setToolTipText(CreationModel.STRENGTH);
-		l_cre_toughness.setToolTipText(CreationModel.TOUGHNESS);
-		l_cre_agility.setToolTipText(CreationModel.AGILITY);
-		l_cre_intelligence.setToolTipText(CreationModel.INTELLIGENCE);
-		l_cre_perception.setToolTipText(CreationModel.PERCEPTION);
-		l_cre_willpower.setToolTipText(CreationModel.WILLPOWER);
-		l_cre_fellowship.setToolTipText(CreationModel.FELLOWSHIP);
+		l_cre_weaponskill.setToolTipText(C.WEAPONSKILL);
+		l_cre_ballisticskill.setToolTipText(C.BALLISTICSKILL);
+		l_cre_strength.setToolTipText(C.STRENGTH);
+		l_cre_toughness.setToolTipText(C.TOUGHNESS);
+		l_cre_agility.setToolTipText(C.AGILITY);
+		l_cre_intelligence.setToolTipText(C.INTELLIGENCE);
+		l_cre_perception.setToolTipText(C.PERCEPTION);
+		l_cre_willpower.setToolTipText(C.WILLPOWER);
+		l_cre_fellowship.setToolTipText(C.FELLOWSHIP);
 		
 		//setLayout for Creation Panel Step 1 and setConstraints for Creation Elements Step 1 
 		p_cre_step1.setLayout(gbl = new GridBagLayout());
@@ -1073,14 +1074,14 @@ public class CreationPanel extends JPanel implements Observer{
 
 		for (Skill s : m.getSkills()) {
 			JLabel name = new JLabel(s.getKeyName());
-			JLabel basic = new JLabel(s.isBasic() ? CreationModel.MARK : CreationModel.DEMARK);
-			JLabel trained = new JLabel(s.isTrained() ? CreationModel.MARK : CreationModel.DEMARK);
-			JLabel ten = new JLabel(CreationModel.DEMARK);
-			JLabel twenty = new JLabel(CreationModel.DEMARK);
+			JLabel basic = new JLabel(s.isBasic() ? C.MARK : C.DEMARK);
+			JLabel trained = new JLabel(s.isTrained() ? C.MARK : C.DEMARK);
+			JLabel ten = new JLabel(C.DEMARK);
+			JLabel twenty = new JLabel(C.DEMARK);
 
 			switch(s.getBonus()) {
-				case 10: ten.setText(CreationModel.MARK); break;
-				case 20: twenty.setText(CreationModel.MARK); break;
+				case 10: ten.setText(C.MARK); break;
+				case 20: twenty.setText(C.MARK); break;
 				default:break;
 			}
 
@@ -1104,7 +1105,7 @@ public class CreationPanel extends JPanel implements Observer{
 		int x = 0;
 
 		for (Talent t : m.getTalents()) {
-			if (t.getKeyName().indexOf(CreationModel.PSYCHICTECHNIQUE) == -1) {
+			if (t.getKeyName().indexOf(C.PSYCHICTECHNIQUE) == -1) {
 				JLabel name = new JLabel(t.getKeyName());
 				gbl.setConstraints(name, makegbc(x,y,1,1));
 				p_prog_talents_values.add(name);
@@ -1120,12 +1121,12 @@ public class CreationPanel extends JPanel implements Observer{
 	}
 		
 //	private void addProgPsychicPowerLabels(GridBagLayout gbl) {
-//		if ((Talent) Functions.getSpecific(m.getTalents(), CreationModel.PSYRATING + " (-)") != null) {
+//		if ((Talent) Functions.getSpecific(m.getTalents(), C.PSYRATING + " (-)") != null) {
 //			int y = 0;
 //			int x = 0;
 //
 //			for (Talent t : m.getTalents()) {
-//				if (t.getKeyName().indexOf(CreationModel.PSYCHICTECHNIQUE) != -1) {
+//				if (t.getKeyName().indexOf(C.PSYCHICTECHNIQUE) != -1) {
 //					JLabel name = new JLabel(t.getKeyName());
 //					gbl.setConstraints(name, makegbc(x,y,1,1));
 //					p_prog_psypowers_values.add(name);
@@ -1163,13 +1164,13 @@ public class CreationPanel extends JPanel implements Observer{
 	private void addCreAdvances(GridBagLayout gbl, boolean box_enabled) {
 		int y = 0;
 
-		JLabel deathwatch_advances_title = new JLabel(CreationModel.DEATHWATCH + " Advances");
+		JLabel deathwatch_advances_title = new JLabel(C.DEATHWATCH + " Advances");
 		deathwatch_advances_title.setForeground(label_color);
 		gbl.setConstraints(deathwatch_advances_title, makegbc(0,y,8,1));
 		p_cre_step5.add(deathwatch_advances_title);
 		y = addCreClassificationAdvances(m.getAvailableDeathwatchAdvances(), gbl, box_enabled, y);
 
-		JLabel spacemarine_advances_title = new JLabel(CreationModel.SPACEMARINE + " Advances");
+		JLabel spacemarine_advances_title = new JLabel(C.SPACEMARINE + " Advances");
 		spacemarine_advances_title.setForeground(label_color); 
 		gbl.setConstraints(spacemarine_advances_title, makegbc(0,y,8,1));
 		p_cre_step5.add(spacemarine_advances_title);
@@ -1224,7 +1225,7 @@ public class CreationPanel extends JPanel implements Observer{
 			JCheckBox box = new JCheckBox();
 			if (ea != null)
 				box.setSelected(true);
-			if (a.getCost() <= m.getCharacterValueValue(CreationModel.XPREST, 1) || ea != null)
+			if (a.getCost() <= m.getCharacterValueValue(C.XPREST, 1) || ea != null)
 				box.setEnabled(box_enabled);
 			else
 				box.setEnabled(false);
@@ -1288,7 +1289,7 @@ public class CreationPanel extends JPanel implements Observer{
 				refreshCharacteristicValues();
 				break;
 			
-			case CreationModel.CHAPTER: 
+			case C.CHAPTER: 
 				if (!cob_cre_spty.isEnabled()) {
 					//just to prevent further handling while the creation proceeds
 					cob_cre_spty.setEnabled(true);
@@ -1319,7 +1320,7 @@ public class CreationPanel extends JPanel implements Observer{
 				refreshTalentLabels();
 				break;
 
-			case CreationModel.SPECIALITY: 
+			case C.SPECIALITY: 
 				//security measure 
 				cob_cre_chpt.setEnabled(false);
 
@@ -1336,7 +1337,7 @@ public class CreationPanel extends JPanel implements Observer{
 				refreshAvailableAdvances(false);
 				break;
 
-			case CreationModel.SPECIALABILITY: 
+			case C.SPECIALABILITY: 
 				//security measure 
 				cob_cre_spty.setEnabled(false);
 
@@ -1390,41 +1391,41 @@ public class CreationPanel extends JPanel implements Observer{
 	}
 
 	private void refreshCharacteristicValues() {
-		l_cre_val_weaponskill.setText("" + (m.getCharacteristicValue(CreationModel.WEAPONSKILL)));
-		l_cre_val_ballisticskill.setText("" + (m.getCharacteristicValue(CreationModel.BALLISTICSKILL)));
-		l_cre_val_strength.setText("" + (m.getCharacteristicValue(CreationModel.STRENGTH)));
-		l_cre_val_toughness.setText("" + (m.getCharacteristicValue(CreationModel.TOUGHNESS)));
-		l_cre_val_agility.setText("" + (m.getCharacteristicValue(CreationModel.AGILITY)));
-		l_cre_val_intelligence.setText("" + (m.getCharacteristicValue(CreationModel.INTELLIGENCE)));
-		l_cre_val_perception.setText("" + (m.getCharacteristicValue(CreationModel.PERCEPTION)));
-		l_cre_val_willpower.setText("" + (m.getCharacteristicValue(CreationModel.WILLPOWER)));
-		l_cre_val_fellowship.setText("" + (m.getCharacteristicValue(CreationModel.FELLOWSHIP)));
+		l_cre_val_weaponskill.setText("" + (m.getCharacteristicValue(C.WEAPONSKILL)));
+		l_cre_val_ballisticskill.setText("" + (m.getCharacteristicValue(C.BALLISTICSKILL)));
+		l_cre_val_strength.setText("" + (m.getCharacteristicValue(C.STRENGTH)));
+		l_cre_val_toughness.setText("" + (m.getCharacteristicValue(C.TOUGHNESS)));
+		l_cre_val_agility.setText("" + (m.getCharacteristicValue(C.AGILITY)));
+		l_cre_val_intelligence.setText("" + (m.getCharacteristicValue(C.INTELLIGENCE)));
+		l_cre_val_perception.setText("" + (m.getCharacteristicValue(C.PERCEPTION)));
+		l_cre_val_willpower.setText("" + (m.getCharacteristicValue(C.WILLPOWER)));
+		l_cre_val_fellowship.setText("" + (m.getCharacteristicValue(C.FELLOWSHIP)));
 
-		l_prog_val_weaponskill.setText("" + (m.getCharacteristicValue(CreationModel.WEAPONSKILL)));
-		l_prog_val_ballisticskill.setText("" + (m.getCharacteristicValue(CreationModel.BALLISTICSKILL)));
-		l_prog_val_strength.setText("" + (m.getCharacteristicValue(CreationModel.STRENGTH)));
-		l_prog_val_toughness.setText("" + (m.getCharacteristicValue(CreationModel.TOUGHNESS)));
-		l_prog_val_agility.setText("" + (m.getCharacteristicValue(CreationModel.AGILITY)));
-		l_prog_val_intelligence.setText("" + (m.getCharacteristicValue(CreationModel.INTELLIGENCE)));
-		l_prog_val_perception.setText("" + (m.getCharacteristicValue(CreationModel.PERCEPTION)));
-		l_prog_val_willpower.setText("" + (m.getCharacteristicValue(CreationModel.WILLPOWER)));
-		l_prog_val_fellowship.setText("" + (m.getCharacteristicValue(CreationModel.FELLOWSHIP)));
+		l_prog_val_weaponskill.setText("" + (m.getCharacteristicValue(C.WEAPONSKILL)));
+		l_prog_val_ballisticskill.setText("" + (m.getCharacteristicValue(C.BALLISTICSKILL)));
+		l_prog_val_strength.setText("" + (m.getCharacteristicValue(C.STRENGTH)));
+		l_prog_val_toughness.setText("" + (m.getCharacteristicValue(C.TOUGHNESS)));
+		l_prog_val_agility.setText("" + (m.getCharacteristicValue(C.AGILITY)));
+		l_prog_val_intelligence.setText("" + (m.getCharacteristicValue(C.INTELLIGENCE)));
+		l_prog_val_perception.setText("" + (m.getCharacteristicValue(C.PERCEPTION)));
+		l_prog_val_willpower.setText("" + (m.getCharacteristicValue(C.WILLPOWER)));
+		l_prog_val_fellowship.setText("" + (m.getCharacteristicValue(C.FELLOWSHIP)));
 	}
 
 	private void refreshCharacterValueValues() {
-		l_prog_val_wounds.setText("" + (m.getCharacterValueValue(CreationModel.WOUNDS, 1)));
-		l_prog_val_insanity.setText("" + (m.getCharacterValueValue(CreationModel.INSANITY, 1)));
-		l_prog_val_movhalf.setText("" + (m.getCharacterValueValue(CreationModel.MOVEMENT, 1)));
-		l_prog_val_movfull.setText("" + (m.getCharacterValueValue(CreationModel.MOVEMENT, 2)));
-		l_prog_val_movcharge.setText("" + (m.getCharacterValueValue(CreationModel.MOVEMENT, 3)));
-		l_prog_val_movrun.setText("" + (m.getCharacterValueValue(CreationModel.MOVEMENT, 4)));
-		l_prog_val_fate.setText("" + (m.getCharacterValueValue(CreationModel.FATE, 1)));
-		l_prog_val_corruption.setText("" + (m.getCharacterValueValue(CreationModel.CORRUPTION, 1)));
-		l_prog_val_rank.setText("" + (m.getCharacterValueValue(CreationModel.RANK, 1)));
-		l_prog_val_xprest.setText("" + (m.getCharacterValueValue(CreationModel.XPREST, 1)));
-		l_prog_val_xptotal.setText("" + (m.getCharacterValueValue(CreationModel.XPTOTAL, 1)));
-		l_prog_val_reknown.setText("" + (m.getCharacterValueValue(CreationModel.REKNOWN, 1)));
-		l_prog_val_psyrating.setText("" + (m.getCharacterValueValue(CreationModel.PSYRATING, 1)));
+		l_prog_val_wounds.setText("" + (m.getCharacterValueValue(C.WOUNDS, 1)));
+		l_prog_val_insanity.setText("" + (m.getCharacterValueValue(C.INSANITY, 1)));
+		l_prog_val_movhalf.setText("" + (m.getCharacterValueValue(C.MOVEMENT, 1)));
+		l_prog_val_movfull.setText("" + (m.getCharacterValueValue(C.MOVEMENT, 2)));
+		l_prog_val_movcharge.setText("" + (m.getCharacterValueValue(C.MOVEMENT, 3)));
+		l_prog_val_movrun.setText("" + (m.getCharacterValueValue(C.MOVEMENT, 4)));
+		l_prog_val_fate.setText("" + (m.getCharacterValueValue(C.FATE, 1)));
+		l_prog_val_corruption.setText("" + (m.getCharacterValueValue(C.CORRUPTION, 1)));
+		l_prog_val_rank.setText("" + (m.getCharacterValueValue(C.RANK, 1)));
+		l_prog_val_xprest.setText("" + (m.getCharacterValueValue(C.XPREST, 1)));
+		l_prog_val_xptotal.setText("" + (m.getCharacterValueValue(C.XPTOTAL, 1)));
+		l_prog_val_reknown.setText("" + (m.getCharacterValueValue(C.REKNOWN, 1)));
+		l_prog_val_psyrating.setText("" + (m.getCharacterValueValue(C.PSYRATING, 1)));
 	}
 
 	private void refreshTalentLabels() {

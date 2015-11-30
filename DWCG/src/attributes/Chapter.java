@@ -8,7 +8,7 @@ package attributes;
 
 import java.util.ArrayList;
 
-import model.CreationModel;
+import resources.C;
 
 
 //	+++ CLASS +++
@@ -56,7 +56,7 @@ public class Chapter {
 			setRestrictions(chapter.getRestrictions());
 			has_restrictions = true;
 		}
-		setBonus(chapter.getBonus(CreationModel.WEAPONSKILL), chapter.getBonus(CreationModel.BALLISTICSKILL), chapter.getBonus(CreationModel.STRENGTH), chapter.getBonus(CreationModel.TOUGHNESS), chapter.getBonus(CreationModel.AGILITY), chapter.getBonus(CreationModel.INTELLIGENCE), chapter.getBonus(CreationModel.PERCEPTION), chapter.getBonus(CreationModel.WILLPOWER), chapter.getBonus(CreationModel.FELLOWSHIP), chapter.getBonus(CreationModel.WOUNDS));
+		setBonus(chapter.getBonus(C.WEAPONSKILL), chapter.getBonus(C.BALLISTICSKILL), chapter.getBonus(C.STRENGTH), chapter.getBonus(C.TOUGHNESS), chapter.getBonus(C.AGILITY), chapter.getBonus(C.INTELLIGENCE), chapter.getBonus(C.PERCEPTION), chapter.getBonus(C.WILLPOWER), chapter.getBonus(C.FELLOWSHIP), chapter.getBonus(C.WOUNDS));
 	}
 
 
@@ -92,25 +92,25 @@ public class Chapter {
 	
 	public int getBonus(String bonus_name) {
 		switch(bonus_name) {
-			case CreationModel.WEAPONSKILL:
+			case C.WEAPONSKILL:
 				return ws_bonus;
-			case CreationModel.BALLISTICSKILL:
+			case C.BALLISTICSKILL:
 				return bs_bonus;
-			case CreationModel.STRENGTH:
+			case C.STRENGTH:
 				return s_bonus;
-			case CreationModel.TOUGHNESS:
+			case C.TOUGHNESS:
 				return t_bonus;
-			case CreationModel.AGILITY:
+			case C.AGILITY:
 				return agi_bonus;
-			case CreationModel.INTELLIGENCE:
+			case C.INTELLIGENCE:
 				return int_bonus;
-			case CreationModel.PERCEPTION:
+			case C.PERCEPTION:
 				return per_bonus;
-			case CreationModel.WILLPOWER:
+			case C.WILLPOWER:
 				return wp_bonus;
-			case CreationModel.FELLOWSHIP:
+			case C.FELLOWSHIP:
 				return fel_bonus;
-			case CreationModel.WOUNDS:
+			case C.WOUNDS:
 				return wounds_bonus;
 			default:return -1;
 		}

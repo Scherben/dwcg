@@ -24,6 +24,7 @@ import attributes.SquadModeAbility;
 import attributes.Talent;
 import attributes.Trait;
 
+import resources.C;
 import resources.Functions;
 
 
@@ -31,71 +32,6 @@ import resources.Functions;
 
 public class CreationModel extends Observable {
 
-
-	//	+++ CONSTANTS +++
-
-	public static final String BLACKTEMPLARS			= "Black Templars";
-	public static final String BLOODANGELS				= "Blood Angels";
-	public static final String DARKANGELS 				= "Dark Angels";
-	public static final String SPACEWOLVES 				= "Space Wolves";
-	public static final String STORMWARDENS 			= "Storm Wardens";
-	public static final String ULTRAMARINES 			= "Ultramarines";
-	public static final String SPACEMARINE 				= "Spacemarine";
-	public static final String DEATHWATCH 				= "Deathwatch";
-	public static final String APOTHECARY 				= "Apothecary";
-	public static final String ASSAULTMARINE 			= "Assault Marine";
-	public static final String DEVASTATORMARINE 		= "Devastator Marine";
-	public static final String LIBRARIAN 				= "Librarian";
-	public static final String TACTICALMARINE 			= "Tactical Marine";
-	public static final String TECHMARINE 				= "Techmarine";
-	public static final String CHARACTERISTIC 			= "Characteristic";
-	public static final String WEAPONSKILL 				= "Weapon Skill";
-	public static final String BALLISTICSKILL 			= "Ballistic Skill";
-	public static final String STRENGTH 				= "Strength";
-	public static final String TOUGHNESS 				= "Toughness";
-	public static final String AGILITY 					= "Agility";
-	public static final String INTELLIGENCE 			= "Intelligence";
-	public static final String PERCEPTION 				= "Perception";
-	public static final String WILLPOWER 				= "Willpower";
-	public static final String FELLOWSHIP 				= "Fellowship";
-	public static final String WS_		 				= "WS";
-	public static final String BS_		 				= "BS";
-	public static final String S_		 				= "S";
-	public static final String T_		 				= "T";
-	public static final String AGI_		 				= "Agi";
-	public static final String INT_		 				= "Int";
-	public static final String PER_		 				= "Per";
-	public static final String WP_		 				= "WP";
-	public static final String FEL_		 				= "Fel";
-	public static final String WOUNDS 					= "Wounds";
-	public static final String INSANITY 				= "Insanity";
-	public static final String MOVEMENT 				= "Movement";
-	public static final String FATE 					= "Fate";
-	public static final String CORRUPTION 				= "Corruption";
-	public static final String RANK 					= "Rank";
-	public static final String XPTOTAL 					= "Total Experience";
-	public static final String XPREST 					= "Rest Experience";
-	public static final String REKNOWN 					= "Reknown";
-	public static final String PSYRATING 				= "Psy Rating";
-	public static final String CHAPTER 					= "Chapter";
-	public static final String SPECIALITY 				= "Speciality";
-	public static final String DEMEANOUR 				= "Demeanour";
-	public static final String PASTEVENT 				= "Past Event";
-	public static final String DESCRIPTION 				= "Description";
-	public static final String SKILL 					= "Skill";
-	public static final String DESCRIPTOR 				= "Descriptor";
-	public static final String TALENT 					= "Talent";
-	public static final String PSYCHICTECHNIQUE 		= "Psychic Technique";
-	public static final String TRAIT 					= "Trait";
-	public static final String SPECIALABILITY 			= "Special Ability";
-	public static final String SOLOMODEABILITY 			= "Solo Mode Ability";
-	public static final String SQUADMODEABILITY 		= "Squad Mode Ability";
-	public static final String GROUP 					= "Group";
-	public static final String ATTACKPATTERN 			= "Attack Pattern";
-	public static final String DEFENSIVESTANCE 			= "Defensive Stance";
-
-	public static final String MARK						= "#";
-	public static final String DEMARK					= "-";
 
 	//all available Attributes for a Character
 	private final ArrayList<Trait> available_traits = new ArrayList<Trait>();
@@ -156,8 +92,8 @@ public class CreationModel extends Observable {
 		loadAvailableChapters();
 		loadAvailableSpecialities();
 		setChapterRestrictions();
-		available_spacemarine_advances = listAdvances(Functions.mapList(Functions.loadCSV("res/spacemarine_advances.csv"),2), SPACEMARINE);
-		available_deathwatch_advances = listAdvances(Functions.mapList(Functions.loadCSV("res/deathwatch_advances.csv"),2), DEATHWATCH);
+		available_spacemarine_advances = listAdvances(Functions.mapList(Functions.loadCSV("res/spacemarine_advances.csv"),2), C.SPACEMARINE);
+		available_deathwatch_advances = listAdvances(Functions.mapList(Functions.loadCSV("res/deathwatch_advances.csv"),2), C.DEATHWATCH);
 		
 
 		//starting Attributes of a Deathwatch Spacemarine
@@ -180,8 +116,8 @@ public class CreationModel extends Observable {
 
 			for (Map.Entry<String,String> e2 : h2.entrySet()) {
 				switch (e2.getKey()) {
-					case TRAIT: name = e2.getValue(); break;
-					case GROUP: group = e2.getValue(); break;
+					case C.TRAIT: name = e2.getValue(); break;
+					case C.GROUP: group = e2.getValue(); break;
 					default: break;
 				}
 			}
@@ -201,14 +137,14 @@ public class CreationModel extends Observable {
 
 			for (Map.Entry<String,String> e2 : h2.entrySet()) {
 				switch (e2.getKey()) {
-					case SKILL: name = e2.getValue(); break;
-					case GROUP: group = e2.getValue(); break;
+					case C.SKILL: name = e2.getValue(); break;
+					case C.GROUP: group = e2.getValue(); break;
 					case "Basic":
-						if (e2.getValue().equals(MARK))
+						if (e2.getValue().equals(C.MARK))
 							is_basic = true;
 						break;
-					case CHARACTERISTIC: characteristic = e2.getValue(); break;
-					case DESCRIPTOR : descriptor = e2.getValue(); break;
+					case C.CHARACTERISTIC: characteristic = e2.getValue(); break;
+					case C.DESCRIPTOR : descriptor = e2.getValue(); break;
 					default: break;
 				}
 			}
@@ -226,8 +162,8 @@ public class CreationModel extends Observable {
 
 			for (Map.Entry<String,String> e2 : h2.entrySet()) {
 				switch (e2.getKey()) {
-					case TALENT: name = e2.getValue(); break;
-					case GROUP: group = e2.getValue(); break;
+					case C.TALENT: name = e2.getValue(); break;
+					case C.GROUP: group = e2.getValue(); break;
 					default: break;
 				}
 			}
@@ -245,8 +181,8 @@ public class CreationModel extends Observable {
 
 			for (Map.Entry<String,String> e2 : h2.entrySet()) {
 				switch (e2.getKey()) {
-					case SOLOMODEABILITY: name = e2.getValue(); break;
-					case RANK: rank = Integer.parseInt(e2.getValue()); break;
+					case C.SOLOMODEABILITY: name = e2.getValue(); break;
+					case C.RANK: rank = Integer.parseInt(e2.getValue()); break;
 					default: break;
 				}
 			}
@@ -269,22 +205,22 @@ public class CreationModel extends Observable {
 
 			for (Map.Entry<String,String> e2 : h2.entrySet()) {
 				switch (e2.getKey()) {
-					case CHAPTER: name = e2.getValue(); break;
-					case SOLOMODEABILITY: solo_mode_ability = new SoloModeAbility(e2.getValue(), 1); break;
-					case ATTACKPATTERN: attack_pattern = new SquadModeAbility(e2.getValue(), 1); break;
-					case DEFENSIVESTANCE: defensive_stance = new SquadModeAbility(e2.getValue(), 1); break;
-					case DEMEANOUR: demeanour = e2.getValue(); break;
-					case WS_: ws_bonus = Integer.parseInt(e2.getValue()); break;
-					case BS_: bs_bonus =  Integer.parseInt(e2.getValue()); break;
-					case S_: s_bonus =  Integer.parseInt(e2.getValue()); break;
-					case T_: t_bonus =  Integer.parseInt(e2.getValue()); break;
-					case AGI_: agi_bonus =  Integer.parseInt(e2.getValue()); break;
-					case INT_: int_bonus =  Integer.parseInt(e2.getValue()); break;
-					case PER_: per_bonus =  Integer.parseInt(e2.getValue()); break;
-					case WP_: wp_bonus =  Integer.parseInt(e2.getValue()); break;
-					case FEL_: fel_bonus =  Integer.parseInt(e2.getValue()); break;
-					case WOUNDS: wounds_bonus =  Integer.parseInt(e2.getValue()); break;
-					case TALENT: 
+					case C.CHAPTER: name = e2.getValue(); break;
+					case C.SOLOMODEABILITY: solo_mode_ability = new SoloModeAbility(e2.getValue(), 1); break;
+					case C.ATTACKPATTERN: attack_pattern = new SquadModeAbility(e2.getValue(), 1); break;
+					case C.DEFENSIVESTANCE: defensive_stance = new SquadModeAbility(e2.getValue(), 1); break;
+					case C.DEMEANOUR: demeanour = e2.getValue(); break;
+					case C.WS: ws_bonus = Integer.parseInt(e2.getValue()); break;
+					case C.BS: bs_bonus =  Integer.parseInt(e2.getValue()); break;
+					case C.S: s_bonus =  Integer.parseInt(e2.getValue()); break;
+					case C.T: t_bonus =  Integer.parseInt(e2.getValue()); break;
+					case C.AGI: agi_bonus =  Integer.parseInt(e2.getValue()); break;
+					case C.INT: int_bonus =  Integer.parseInt(e2.getValue()); break;
+					case C.PER: per_bonus =  Integer.parseInt(e2.getValue()); break;
+					case C.WP: wp_bonus =  Integer.parseInt(e2.getValue()); break;
+					case C.FEL: fel_bonus =  Integer.parseInt(e2.getValue()); break;
+					case C.WOUNDS: wounds_bonus =  Integer.parseInt(e2.getValue()); break;
+					case C.TALENT: 
 						if (!e2.getValue().equals("-")) {
 							talent = (Talent) Functions.getSpecific(available_talents,e2.getValue());
 						} else {
@@ -299,7 +235,7 @@ public class CreationModel extends Observable {
 			} else {
 				chapter_file_name = name.toLowerCase();
 			}
-			ArrayList<Advance> advances = listAdvances(Functions.mapList(Functions.loadCSV("res/" + chapter_file_name + "_advances.csv"),2), CHAPTER);
+			ArrayList<Advance> advances = listAdvances(Functions.mapList(Functions.loadCSV("res/" + chapter_file_name + "_advances.csv"),2), C.CHAPTER);
 			available_chapters.add(new Chapter(name, solo_mode_ability, attack_pattern ,defensive_stance, demeanour, advances));
 			Chapter c = (Chapter) Functions.getSpecific(available_chapters, name);
 			if (talent != null)
@@ -325,10 +261,10 @@ public class CreationModel extends Observable {
 			HashMap<String,String> h = e1.getValue();
 			for (Map.Entry<String,String> e2 : h.entrySet()) {
 				switch (e2.getKey()) {
-					case SPECIALITY: name = e2.getValue(); break;
-					case SPECIALABILITY: special_ability_name = e2.getValue(); break;
+					case C.SPECIALITY: name = e2.getValue(); break;
+					case C.SPECIALABILITY: special_ability_name = e2.getValue(); break;
 					case "Choosable": 
-						if (e2.getValue().equals(MARK))
+						if (e2.getValue().equals(C.MARK))
 						choosable = true;
 						break;
 					default:break;
@@ -344,7 +280,7 @@ public class CreationModel extends Observable {
 				} else {
 					speciality_file_name = name.toLowerCase();
 				}
-				ArrayList<Advance> advances = listAdvances(Functions.mapList(Functions.loadCSV("res/" + speciality_file_name + "_advances.csv"),2), SPECIALITY);
+				ArrayList<Advance> advances = listAdvances(Functions.mapList(Functions.loadCSV("res/" + speciality_file_name + "_advances.csv"),2), C.SPECIALITY);
 				//add a new speciality
 				available_specialities.add(new Speciality(name, advances));
 			}
@@ -366,8 +302,8 @@ public class CreationModel extends Observable {
 			HashMap<String,String> h = e1.getValue();
 			for (Map.Entry<String,String> e2 : h.entrySet()) {
 				switch (e2.getKey()) {
-					case SPECIALABILITY: sa = (SpecialAbility) Functions.getSpecific(available_special_abilities, e2.getValue()); break;
-					case TRAIT: trait = new Trait((Trait) Functions.getSpecific(available_traits, e2.getValue())); break;
+					case C.SPECIALABILITY: sa = (SpecialAbility) Functions.getSpecific(available_special_abilities, e2.getValue()); break;
+					case C.TRAIT: trait = new Trait((Trait) Functions.getSpecific(available_traits, e2.getValue())); break;
 					//case SPECIALITY: speciality = (Speciality) getSpecific(available_specialities, e2.getValue()); break;
 					default:break;
 				}
@@ -383,8 +319,8 @@ public class CreationModel extends Observable {
 
 			for (Map.Entry<String,String> e2 : h.entrySet()) {
 				switch (e2.getKey()) {
-					case SPECIALABILITY: sa = (SpecialAbility) Functions.getSpecific(available_special_abilities, e2.getValue()); break;
-					case TALENT: talent = (Talent) Functions.getSpecific(available_talents, e2.getValue()); break;
+					case C.SPECIALABILITY: sa = (SpecialAbility) Functions.getSpecific(available_special_abilities, e2.getValue()); break;
+					case C.TALENT: talent = (Talent) Functions.getSpecific(available_talents, e2.getValue()); break;
 					//case SPECIALITY: speciality = (Speciality) getSpecific(available_specialities, e2.getValue()); break;
 					default:break;
 				}
@@ -407,8 +343,8 @@ public class CreationModel extends Observable {
 
 			for (Map.Entry<String,String> e2 : h.entrySet()) {
 				switch (e2.getKey()) {
-					case SPECIALITY: name = e2.getValue(); break;
-					case SKILL: 
+					case C.SPECIALITY: name = e2.getValue(); break;
+					case C.SKILL: 
 						skill = new Skill((Skill) Functions.getSpecific(available_skills, e2.getValue()));
 						skill.setTrained(true);
 						break;
@@ -430,14 +366,14 @@ public class CreationModel extends Observable {
 
 	public void setChapterRestrictions() {
 		for (Chapter c : available_chapters) {
-			if (c.getName().equals(SPACEWOLVES)) {
+			if (c.getName().equals(C.SPACEWOLVES)) {
 				ArrayList<Restriction> restrictions = new ArrayList<Restriction>();
-				restrictions.add(new Restriction((Speciality) Functions.getSpecific(available_specialities, APOTHECARY)));
+				restrictions.add(new Restriction((Speciality) Functions.getSpecific(available_specialities, C.APOTHECARY)));
 				c.setRestrictions(restrictions);
-			} else if (c.getName().equals(BLACKTEMPLARS)) {
+			} else if (c.getName().equals(C.BLACKTEMPLARS)) {
 				ArrayList<Restriction> restrictions = new ArrayList<Restriction>();
-				restrictions.add(new Restriction((Speciality) Functions.getSpecific(available_specialities, LIBRARIAN)));
-				restrictions.add(new Restriction((Speciality) Functions.getSpecific(available_specialities, DEVASTATORMARINE)));
+				restrictions.add(new Restriction((Speciality) Functions.getSpecific(available_specialities, C.LIBRARIAN)));
+				restrictions.add(new Restriction((Speciality) Functions.getSpecific(available_specialities, C.DEVASTATORMARINE)));
 				c.setRestrictions(restrictions);
 			}
 		}
@@ -463,7 +399,7 @@ public class CreationModel extends Observable {
 				}
 			}
 			Advance a = new Advance(classification, name, cost);
-			if (type.equals(SKILL)) {
+			if (type.equals(C.SKILL)) {
 				if (name.indexOf("0") != -1) {
 					bonus = Integer.parseInt(name.substring(name.indexOf("0")-1, name.indexOf("0")+1));
 					skill_name = name.substring(0, name.lastIndexOf(")")-4);
@@ -474,10 +410,10 @@ public class CreationModel extends Observable {
 				skill.setTrained(true);
 				skill.setBonus(bonus);
 				a.setSkill(skill);
-			} else if (type.equals(TALENT)) {
+			} else if (type.equals(C.TALENT)) {
 				talent = (Talent) Functions.getSpecific(available_talents, name);
 				a.setTalent(talent);
-			} else if (type.equals(CHARACTERISTIC)) {
+			} else if (type.equals(C.CHARACTERISTIC)) {
 				bonus = 5;
 				characteristic = new Characteristic((Characteristic) Functions.getSpecific(starting_characteristics, name)); 
 				characteristic.setAdvanceBonus(bonus);
@@ -490,15 +426,15 @@ public class CreationModel extends Observable {
 	}
 
 	private void loadStartingCharacteristics() {
-		Characteristic ws_ = new Characteristic(WEAPONSKILL, false);
-		Characteristic b_ = new Characteristic(BALLISTICSKILL, false);
-		Characteristic s_ = new Characteristic(STRENGTH, true);
-		Characteristic t_ = new Characteristic(TOUGHNESS, true);
-		Characteristic a_ = new Characteristic(AGILITY, true);
-		Characteristic i_ = new Characteristic(INTELLIGENCE, true);
-		Characteristic p_ = new Characteristic(PERCEPTION, true);
-		Characteristic wp_ = new Characteristic(WILLPOWER, true);
-		Characteristic f_ = new Characteristic(FELLOWSHIP, true);
+		Characteristic ws_ = new Characteristic(C.WEAPONSKILL, false);
+		Characteristic b_ = new Characteristic(C.BALLISTICSKILL, false);
+		Characteristic s_ = new Characteristic(C.STRENGTH, true);
+		Characteristic t_ = new Characteristic(C.TOUGHNESS, true);
+		Characteristic a_ = new Characteristic(C.AGILITY, true);
+		Characteristic i_ = new Characteristic(C.INTELLIGENCE, true);
+		Characteristic p_ = new Characteristic(C.PERCEPTION, true);
+		Characteristic wp_ = new Characteristic(C.WILLPOWER, true);
+		Characteristic f_ = new Characteristic(C.FELLOWSHIP, true);
 		Characteristic cws_ = new Characteristic(ws_);
 		Characteristic cb_ = new Characteristic(b_);
 		Characteristic cs_ = new Characteristic(s_);
@@ -529,16 +465,16 @@ public class CreationModel extends Observable {
 	}
 
 	private void loadStartingCharacterValues() {
-		CharacterValue w_ = new CharacterValue(WOUNDS, 18);
-		CharacterValue i_ = new CharacterValue(INSANITY, 0);
-		CharacterValue m_ = new CharacterValue(MOVEMENT, ((Characteristic) Functions.getSpecific(starting_characteristics, AGILITY)).getBonus());
-		CharacterValue f_ = new CharacterValue(FATE, 0);
-		CharacterValue c_ = new CharacterValue(CORRUPTION, 0);
-		CharacterValue ra_ = new CharacterValue(RANK, 1);
-		CharacterValue xr_ = new CharacterValue(XPREST, 1000);
-		CharacterValue xt_ = new CharacterValue(XPTOTAL, 1000);
-		CharacterValue re_ = new CharacterValue(REKNOWN, 0);
-		CharacterValue p_ = new CharacterValue(PSYRATING, 0);
+		CharacterValue w_ = new CharacterValue(C.WOUNDS, 18);
+		CharacterValue i_ = new CharacterValue(C.INSANITY, 0);
+		CharacterValue m_ = new CharacterValue(C.MOVEMENT, ((Characteristic) Functions.getSpecific(starting_characteristics, C.AGILITY)).getBonus());
+		CharacterValue f_ = new CharacterValue(C.FATE, 0);
+		CharacterValue c_ = new CharacterValue(C.CORRUPTION, 0);
+		CharacterValue ra_ = new CharacterValue(C.RANK, 1);
+		CharacterValue xr_ = new CharacterValue(C.XPREST, 1000);
+		CharacterValue xt_ = new CharacterValue(C.XPTOTAL, 1000);
+		CharacterValue re_ = new CharacterValue(C.REKNOWN, 0);
+		CharacterValue p_ = new CharacterValue(C.PSYRATING, 0);
 		CharacterValue cw_ = new CharacterValue(w_);
 		CharacterValue ci_ = new CharacterValue(i_);
 		CharacterValue cm_ = new CharacterValue(m_);
@@ -582,8 +518,8 @@ public class CreationModel extends Observable {
 
 			for (Map.Entry<String,String> e2 : h2.entrySet()) {
 				switch (e2.getKey()) {
-					case TRAIT: name = e2.getValue(); break;
-					case GROUP: group = e2.getValue(); break;
+					case C.TRAIT: name = e2.getValue(); break;
+					case C.GROUP: group = e2.getValue(); break;
 					case "Multiplier": multiplier = Integer.parseInt(e2.getValue()); break;
 					default:break;
 				}
@@ -606,8 +542,8 @@ public class CreationModel extends Observable {
 
 			for (Map.Entry<String,String> e2 : h2.entrySet()) {
 				switch (e2.getKey()) {
-					case TALENT: name = e2.getValue(); break;
-					case GROUP: group = e2.getValue(); break;
+					case C.TALENT: name = e2.getValue(); break;
+					case C.GROUP: group = e2.getValue(); break;
 					default: break;
 				}
 			}
@@ -629,10 +565,10 @@ public class CreationModel extends Observable {
 			HashMap<String,String> h2 = e1.getValue();
 			for (Map.Entry<String,String> e2 : h2.entrySet()) {
 				switch (e2.getKey()) {
-					case SKILL: name = e2.getValue(); break;
-					case GROUP: group = e2.getValue(); break;
+					case C.SKILL: name = e2.getValue(); break;
+					case C.GROUP: group = e2.getValue(); break;
 					case "Trained":
-						if (e2.getValue().equals(MARK))
+						if (e2.getValue().equals(C.MARK))
 							trained = true;
 						break;
 					default: break;
@@ -804,16 +740,16 @@ public class CreationModel extends Observable {
 
 	public void rollAllCharacteristics() {
 		//roll the dice for all Characteristics once
-		setCharacteristicRoll(WEAPONSKILL, Functions.randomCharacteristicValue());
-		setCharacteristicRoll(WEAPONSKILL, Functions.randomCharacteristicValue());
-		setCharacteristicRoll(BALLISTICSKILL, Functions.randomCharacteristicValue());
-		setCharacteristicRoll(STRENGTH, Functions.randomCharacteristicValue());
-		setCharacteristicRoll(TOUGHNESS, Functions.randomCharacteristicValue());
-		setCharacteristicRoll(AGILITY, Functions.randomCharacteristicValue());
-		setCharacteristicRoll(INTELLIGENCE, Functions.randomCharacteristicValue());
-		setCharacteristicRoll(PERCEPTION, Functions.randomCharacteristicValue());
-		setCharacteristicRoll(WILLPOWER, Functions.randomCharacteristicValue());
-		setCharacteristicRoll(FELLOWSHIP, Functions.randomCharacteristicValue());
+		setCharacteristicRoll(C.WEAPONSKILL, Functions.randomCharacteristicValue());
+		setCharacteristicRoll(C.WEAPONSKILL, Functions.randomCharacteristicValue());
+		setCharacteristicRoll(C.BALLISTICSKILL, Functions.randomCharacteristicValue());
+		setCharacteristicRoll(C.STRENGTH, Functions.randomCharacteristicValue());
+		setCharacteristicRoll(C.TOUGHNESS, Functions.randomCharacteristicValue());
+		setCharacteristicRoll(C.AGILITY, Functions.randomCharacteristicValue());
+		setCharacteristicRoll(C.INTELLIGENCE, Functions.randomCharacteristicValue());
+		setCharacteristicRoll(C.PERCEPTION, Functions.randomCharacteristicValue());
+		setCharacteristicRoll(C.WILLPOWER, Functions.randomCharacteristicValue());
+		setCharacteristicRoll(C.FELLOWSHIP, Functions.randomCharacteristicValue());
 		flag = "All Characteristics Rolled";
 
 		setChanged();
@@ -840,7 +776,7 @@ public class CreationModel extends Observable {
 			//does the chapter has a talent?
 			if (chapter.hasTalent()) //yes
 				removeChapterTalents();
-			removeAdvances("", CHAPTER);
+			removeAdvances("", C.CHAPTER);
 		}
 
 		//set the Chapter for the Character
@@ -877,7 +813,7 @@ public class CreationModel extends Observable {
 		}
 		solo_mode_abilities.add(chapter.getSoloModeAbility());
 
-		flag = CHAPTER;
+		flag = C.CHAPTER;
 		setChanged();
 		notifyObservers();
 	}
@@ -939,7 +875,7 @@ public class CreationModel extends Observable {
 			}
 		}
 
-		flag = SPECIALITY;
+		flag = C.SPECIALITY;
 		setChanged();
 		notifyObservers();
 	}
@@ -964,7 +900,7 @@ public class CreationModel extends Observable {
 			}
 		}
 
-		flag = SPECIALABILITY;
+		flag = C.SPECIALABILITY;
 		setChanged();
 		notifyObservers();
 	}
@@ -972,7 +908,7 @@ public class CreationModel extends Observable {
 	public void removeSpeciality() {
 		removeSpecialAbilities();
 		removeSpecialitySkills();
-		removeAdvances("", SPECIALITY);
+		removeAdvances("", C.SPECIALITY);
 		removeChosenSpecialAbility();
 		speciality = null;
 		has_speciality = false;
@@ -1058,16 +994,16 @@ public class CreationModel extends Observable {
 		Advance a = null;
 
 		switch (classification) {
-			case DEATHWATCH: 
+			case C.DEATHWATCH: 
 				a = (Advance) Functions.getSpecific(available_deathwatch_advances, key_name);
 				break;
-			case SPACEMARINE: 
+			case C.SPACEMARINE: 
 				a = (Advance) Functions.getSpecific(available_spacemarine_advances, key_name);
 				break;
-			case CHAPTER: 
+			case C.CHAPTER: 
 				a = (Advance) Functions.getSpecific(chapter.getAdvances(), key_name);
 				break;
-			case SPECIALITY: 
+			case C.SPECIALITY: 
 				a = (Advance) Functions.getSpecific(speciality.getAdvances(), key_name);
 				break;
 			default:break;
@@ -1090,7 +1026,7 @@ public class CreationModel extends Observable {
 					//add the new advance
 					advances.add(a);
 					//reduce xp
-					CharacterValue xpr = (CharacterValue) Functions.getSpecific(charactervalues, XPREST);
+					CharacterValue xpr = (CharacterValue) Functions.getSpecific(charactervalues, C.XPREST);
 					xpr.setValue(xpr.getValue() - a.getCost());
 					//add the skill
 					skills.add(s);
@@ -1100,7 +1036,7 @@ public class CreationModel extends Observable {
 						//add the new advance
 						advances.add(a);
 						//reduce xp
-						CharacterValue xpr = (CharacterValue) Functions.getSpecific(charactervalues, XPREST);
+						CharacterValue xpr = (CharacterValue) Functions.getSpecific(charactervalues, C.XPREST);
 						xpr.setValue(xpr.getValue() - a.getCost());
 				 		//set the Skill trained
 				 		es.setTrained(true);
@@ -1111,7 +1047,7 @@ public class CreationModel extends Observable {
 				 		//add the new advance
 						advances.add(a);
 						//reduce xp
-						CharacterValue xpr = (CharacterValue) Functions.getSpecific(charactervalues, XPREST);
+						CharacterValue xpr = (CharacterValue) Functions.getSpecific(charactervalues, C.XPREST);
 						xpr.setValue(xpr.getValue() - a.getCost());
 				 		// set the higher Skill Bonus
 				 		es.setBonus(s.getBonus());
@@ -1128,7 +1064,7 @@ public class CreationModel extends Observable {
 					//add the new advance
 					advances.add(a);
 					//add the talent
-					CharacterValue xpr = (CharacterValue) Functions.getSpecific(charactervalues, XPREST);
+					CharacterValue xpr = (CharacterValue) Functions.getSpecific(charactervalues, C.XPREST);
 					xpr.setValue(xpr.getValue() - a.getCost());
 					talents.add(t);
 				} else {
@@ -1141,7 +1077,7 @@ public class CreationModel extends Observable {
 				//add the new advance
 				advances.add(a);
 				//add the talent
-				CharacterValue xpr = (CharacterValue) Functions.getSpecific(charactervalues, XPREST);
+				CharacterValue xpr = (CharacterValue) Functions.getSpecific(charactervalues, C.XPREST);
 				xpr.setValue(xpr.getValue() - a.getCost());
 				//set the Advance Bonus
 				ec.setAdvanceBonus(c.getAdvanceBonus());
@@ -1163,7 +1099,7 @@ public class CreationModel extends Observable {
 		if(advances.indexOf(a) != -1){
 			//remove the Advance
 			advances.remove(a);
-			CharacterValue xpr = (CharacterValue) Functions.getSpecific(charactervalues, XPREST);
+			CharacterValue xpr = (CharacterValue) Functions.getSpecific(charactervalues, C.XPREST);
 			xpr.setValue(xpr.getValue() + a.getCost());
 			//is the advance a skill?
 			if (a.isSkill()) { //yes
@@ -1227,16 +1163,16 @@ public class CreationModel extends Observable {
 		//is it necessary to iterate through a complete advancelist?
 		if (name.isEmpty()) { //yes
 			switch (classification) {
-				case SPACEMARINE: 
+				case C.SPACEMARINE: 
 					l = available_spacemarine_advances;
 					break;
-				case DEATHWATCH: 
+				case C.DEATHWATCH: 
 					l = available_deathwatch_advances;
 					break;
-				case CHAPTER: 
+				case C.CHAPTER: 
 					l = chapter.getAdvances();
 					break;
-				case SPECIALITY: 
+				case C.SPECIALITY: 
 					l = speciality.getAdvances();
 					break;
 				default: break;

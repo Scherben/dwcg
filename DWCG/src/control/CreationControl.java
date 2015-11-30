@@ -14,6 +14,8 @@ import java.awt.event.ItemListener;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 
+import resources.C;
+
 import model.CreationModel;
 
 
@@ -41,41 +43,41 @@ public class CreationControl implements ActionListener, ItemListener{
 				//roll the dice for all Characteristics
 				cmodel.rollAllCharacteristics();
 				break;
-			case "Reroll " + CreationModel.WEAPONSKILL:
+			case "Reroll " + C.WEAPONSKILL:
 				//roll the dice for Weapon Skill again
-				cmodel.rerollCharacteristic(CreationModel.WEAPONSKILL);
+				cmodel.rerollCharacteristic(C.WEAPONSKILL);
 				break;
-			case "Reroll " + CreationModel.BALLISTICSKILL:
+			case "Reroll " + C.BALLISTICSKILL:
 				//roll the dice for Ballistic Skill again
-				cmodel.rerollCharacteristic(CreationModel.BALLISTICSKILL);
+				cmodel.rerollCharacteristic(C.BALLISTICSKILL);
 				break;
-			case "Reroll " + CreationModel.STRENGTH:
+			case "Reroll " + C.STRENGTH:
 				//roll the dice for Strength again
-				cmodel.rerollCharacteristic(CreationModel.STRENGTH);
+				cmodel.rerollCharacteristic(C.STRENGTH);
 				break;
-			case "Reroll " + CreationModel.TOUGHNESS:
+			case "Reroll " + C.TOUGHNESS:
 				//roll the dice for Toughness again
-				cmodel.rerollCharacteristic(CreationModel.TOUGHNESS);
+				cmodel.rerollCharacteristic(C.TOUGHNESS);
 				break;
-			case "Reroll " + CreationModel.AGILITY:
+			case "Reroll " + C.AGILITY:
 				//roll the dice for Agility again
-				cmodel.rerollCharacteristic(CreationModel.AGILITY);
+				cmodel.rerollCharacteristic(C.AGILITY);
 				break;
-			case "Reroll " + CreationModel.INTELLIGENCE:
+			case "Reroll " + C.INTELLIGENCE:
 				//roll the dice for Intelligence again
-				cmodel.rerollCharacteristic(CreationModel.INTELLIGENCE);
+				cmodel.rerollCharacteristic(C.INTELLIGENCE);
 				break;
-			case "Reroll " + CreationModel.PERCEPTION:
+			case "Reroll " + C.PERCEPTION:
 				//roll the dice for Perception again
-				cmodel.rerollCharacteristic(CreationModel.PERCEPTION);
+				cmodel.rerollCharacteristic(C.PERCEPTION);
 				break;
-			case "Reroll " + CreationModel.WILLPOWER:
+			case "Reroll " + C.WILLPOWER:
 				//roll the dice for Willpower again
-				cmodel.rerollCharacteristic(CreationModel.WILLPOWER);
+				cmodel.rerollCharacteristic(C.WILLPOWER);
 				break;
-			case "Reroll " + CreationModel.FELLOWSHIP:
+			case "Reroll " + C.FELLOWSHIP:
 				//roll the dice for Fellowship again
-				cmodel.rerollCharacteristic(CreationModel.FELLOWSHIP);
+				cmodel.rerollCharacteristic(C.FELLOWSHIP);
 				break;
 			default: break;
 		};
